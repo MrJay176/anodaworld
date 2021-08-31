@@ -1,0 +1,28 @@
+.writeUpCover{
+    width: 100%;
+
+}
+
+.FirstWriteUp{
+    display: flex;
+    height:200px;
+    align-items: center;
+}
+
+.FirstText{
+    margin-left:10px;
+    color: white;
+    font-weight:bold;
+}
+
+.SecondText{
+    margin-left:10px;
+    color: white;
+    font-weight:bold;
+}
+
+.SecondWriteUp{
+    display: flex;
+    align-items: center;
+    height:150px;
+}

@@ -1,0 +1,16 @@
+.Right{
+    height: 300px;
+    flex: 1;
+}
+
+
+.Right-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.giftImage{
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+}

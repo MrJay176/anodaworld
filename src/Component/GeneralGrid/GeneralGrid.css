@@ -1,0 +1,49 @@
+.GeneralGrid-Cover{
+    height: 800px; 
+    background-color: rgb(149, 149, 175);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width:100%;
+}
+
+.Generalgrid{
+    width:100px;
+    height: 100%;
+}
+
+.GeneralGrid-Cover{
+    padding: 10px;
+}
+
+.GeneralGrid_Wrapper{
+    display:flex;
+    flex-flow:column;
+    align-items: center;
+}
+
+.header-text{
+    color:white;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.myGenralGrid{
+    width:1px;
+    height:210px;
+    padding: 10px;
+}
+
+  
+.button-wrapper-link{
+    width:500px;
+}
+
+
+@media screen and (max-width : 1000px){
+
+    
+.button-wrapper-link{
+    width:100%;
+}
+
+}

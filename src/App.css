@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+
+
+.Slidert{
+   display: flex;
+   background-color: rgb(149, 149, 175);
+   scroll-behavior: smooth;
+   flex-flow:column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info-wrapper{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: column;
 }
 
-.App-link {
-  color: #61dafb;
+.item-wrapper{
+  padding-left:10px;
+  padding-right:10px;
+  display: flex;
+  background-color: rgb(149, 149, 175);
+  scroll-behavior: smooth;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SliderMobile{
+  display: flex;
+  background-color: rgb(149, 149, 175);
+  scroll-behavior: smooth;
+  flex-flow:column;
+  align-items: center;
 }
+
+body{
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(149, 149, 175);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.App{
+    height: 100vh;
+    width: 100%;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+
+.App_Wrapper{
+  height: 100%;
+
+  width:100%;  
+}
+
+@media only screen and ( max-width:780px){
+
+  
+.App_Wrapper{
+  
+}
+
+  
+.App::-webkit-scrollbar{
+  display: none;
+  height: 100vh;
+  width: 100%;
+ overflow-y: scroll;
+ overflow-x: hidden;
+   }
+}
+
+
+  body > #root > div {
+    height: 100vh;
+    text-decoration: none;
+  }
+
+a{
+  text-decoration: none;
+  margin:0px;
+  padding:0px;
+}  

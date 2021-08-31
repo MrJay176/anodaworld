@@ -1,0 +1,13 @@
+.myGrid{
+   display: flex;
+   align-items: center;
+   justify-content: center;  
+   width:20%; 
+}
+
+.grid{
+  background-color: #87ceeb;
+  border-radius:30px;
+  width: 35%;
+}
+

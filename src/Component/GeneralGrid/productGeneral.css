@@ -1,0 +1,67 @@
+
+.card-main-general{
+    height:130px;
+    width:200px;
+}
+
+.card-media-general{
+    background-color:#000;
+    width: 200px;
+    height: 60%; 
+}
+
+.myIcon{
+    margin-right: auto;
+}
+
+.card-content-general{
+    width: 200px;
+    height: 10%;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+
+.card-content-wrapper-general{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-flow:column;
+    height:100%;
+
+}
+
+.card-content-closure-general{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-flow:row;
+    height:30%;
+}
+
+
+.typoOne{
+    margin-right:10px;
+    color: black;
+    font-size: 15px;
+}
+
+.typoTwo{
+    margin-left:auto;
+    color: black;
+    font-size: 15px;
+}
+
+.typoThree{
+    margin-right: auto;
+    font-size: 15px;
+} 
+
+.card-actions-general{
+    height:20%;
+    width: 200px;
+    margin-top: auto;
+}
+

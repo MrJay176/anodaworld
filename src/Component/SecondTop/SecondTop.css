@@ -1,0 +1,134 @@
+
+.SecondTop{
+    display:flex;
+    flex-flow: row;
+    height:300px;
+    padding-left:10px;
+  }
+
+  .webSecondCorrect{
+    display:flex;
+    padding: top 30px;;
+    height: 500px;
+  }
+
+  .webGrid{
+    height:100%;
+    padding-top: 30px;
+  
+  }
+
+  .text{
+    height:30%;
+    display:flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+   .text-p{
+     align-self: center;
+     font-size: 35px;
+     color:white;
+   }
+
+  .webSecondCorrect{
+    display: flex;
+    flex-flow: row;
+  }
+
+  .webSecond{
+    visibility:hidden;
+  }
+
+  .Second-Web{
+    visibility:hidden;
+  }
+  
+
+  @media screen and (max-width : 1000px){
+   
+    .Second-Web{
+      visibility:hidden;
+    }
+
+    .webGrid{
+      visibility:visible;
+    }
+    
+    .webSecond{
+      visibility:hidden;
+    }
+
+
+    .image-show{
+      width:100%;
+      height:70%;
+      object-fit:fill;
+      margin-left:0px;
+      margin-right:10px;
+    }
+
+    .card-mobile{
+      margin-left:10px;
+      margin-right:10px;
+      height:250px;
+      width:300px;
+      background-color: white;
+    }
+
+    .SecondTop{
+        display:flex;
+        background-color: rgb(149, 149, 175);
+        flex-flow: column;
+        height: 500px;
+        padding-left:1px;
+      }
+
+      .LeftSection-Mobile{
+        display:flex;
+        flex-flow: row;
+        height:300px;
+        overflow: hidden;
+      }
+
+      .RightSection-Second p{
+          font-size:20px;
+          margin: auto;
+          color: white;
+          margin-bottom:20px;
+      }
+
+    .RightSection-Second{
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        padding-top: 30px;
+    }
+
+    
+  .LeftSection-Mobile:hover {
+    overflow-x: scroll;
+  }
+
+    .LeftSection-Second{
+
+    }
+
+    
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0,0.25);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background-color: rgb(200, 149, 175);;
+}
+  }
+  

@@ -1,0 +1,158 @@
+
+
+
+
+@media only screen and (max-width : 1000px) and (min-width:0px){
+    .card-main{
+        height:220px;
+        padding: 0px;        
+    }
+}
+
+
+@media only screen and (max-width : 500px) and (min-width:200px){
+    .card-main{
+        height:220px;
+        padding: 0px;
+    }
+    
+}
+
+
+@media only screen and (max-width : 1000px) and (min-width:500px){
+    .card-main{
+        height:220px;
+        padding: 0px;     
+    }
+    
+}
+
+@media only screen and (min-width:1000px){
+   .card-main{
+    height:320px;  
+    padding: 0px;
+  }   
+}
+
+
+@media screen and (max-width:1098px )  and (min-width:850px){
+    .card-main{
+        height:200px; 
+        width: 250px; 
+        padding:0px;
+     }
+  }
+
+@media screen and (max-width:3000px )  and (min-width:1098px){
+    .card-main{
+        height:200px; 
+        width: 250px; 
+        padding:0px;
+     }
+}
+
+.card-media{
+    width:100%;
+    border-radius: 10px;
+    height:83%; 
+    padding:10px;
+    object-fit:fill;
+}
+
+.myIcon{
+    margin-right: auto;
+}
+
+.card-content{
+    width: 250px;
+    height: 10%;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+
+.card-content-wrapper{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-flow:column;
+    height: 100%;
+
+}
+
+.card-content-closure{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-flow:row;
+    height:40%;
+}
+
+
+.typoOne{
+    margin-right:10px;
+    color: black;
+    font-size: 15px;
+}
+
+.typoTwo{
+    margin-left:auto;
+    color: black;
+    font-size: 15px;
+}
+
+.typoThree{
+    margin-right: auto;
+    font-size: 15px;
+} 
+
+.card-actions{
+    height:20%;
+    width: 200px;
+    margin-top: auto;
+}
+
+/* .card-main{
+    width : 200px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.card-media{
+    background-color:#000;
+    width: 200px;
+    height: 50%; 
+}
+
+
+
+.card-content{
+    width: 200px;
+    height: 20%;
+    background-color: yellow;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+
+.typoOne{
+    margin-right:10px;
+    color: black;
+    font-size: 19px;
+}
+
+.typoTwo{
+    margin-left:auto;
+    color: black;
+    font-size: 19px;
+}
+
+.typoThree{
+    margin-right: auto;
+    font-size: 19px;
+} */

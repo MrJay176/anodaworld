@@ -1,0 +1,37 @@
+.Left{
+    height: 300px;
+    flex: 1;
+    
+}
+
+.Left-wrapper{
+    display: flex;
+    flex-flow:column;
+    align-items:center;
+    border-radius:10px;
+}
+
+.newsales{
+    height:200px;
+    border-radius:15px;
+}
+.button-wrapper{
+    background-color: #fff;
+    height: 60px;
+    margin:20px;
+    display: flex;
+    border-radius:20px;
+    box-shadow: 0 6px 20px rgba(56,125, 255,0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(56,125 , 255 , 0.017));
+    filter: drop-shadow(0 6px 20px rgba(56 , 125 , 255 , 0.017));
+}
+
+.button-wrapper-link{
+    text-decoration: none;
+    width: 100%;
+}
+
+.button-wrapper_text{
+   color:black;
+   margin: auto;
+}
