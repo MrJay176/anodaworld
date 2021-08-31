@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/anodaworld/static/css/main.904ff324.chunk.css",
+    "main.js": "/anodaworld/static/js/main.87cc0260.chunk.js",
+    "main.js.map": "/anodaworld/static/js/main.87cc0260.chunk.js.map",
+    "runtime-main.js": "/anodaworld/static/js/runtime-main.c8132153.js",
+    "runtime-main.js.map": "/anodaworld/static/js/runtime-main.c8132153.js.map",
+    "static/css/2.281daa83.chunk.css": "/anodaworld/static/css/2.281daa83.chunk.css",
+    "static/js/2.8d3eb87f.chunk.js": "/anodaworld/static/js/2.8d3eb87f.chunk.js",
+    "static/js/2.8d3eb87f.chunk.js.map": "/anodaworld/static/js/2.8d3eb87f.chunk.js.map",
+    "index.html": "/anodaworld/index.html",
+    "static/css/2.281daa83.chunk.css.map": "/anodaworld/static/css/2.281daa83.chunk.css.map",
+    "static/css/main.904ff324.chunk.css.map": "/anodaworld/static/css/main.904ff324.chunk.css.map",
+    "static/js/2.8d3eb87f.chunk.js.LICENSE.txt": "/anodaworld/static/js/2.8d3eb87f.chunk.js.LICENSE.txt",
+    "static/media/slick-theme.css": "/anodaworld/static/media/slick.c94f7671.ttf",
+    "static/media/FirstTop.css": "/anodaworld/static/media/wall.0f680ea7.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8132153.js",
+    "static/css/2.281daa83.chunk.css",
+    "static/js/2.8d3eb87f.chunk.js",
+    "static/css/main.904ff324.chunk.css",
+    "static/js/main.87cc0260.chunk.js"
+  ]
+}
