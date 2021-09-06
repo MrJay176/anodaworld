@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/anodaworld/static/css/main.04d0c0a6.chunk.css",
-    "main.js": "/anodaworld/static/js/main.72b8c3f4.chunk.js",
-    "main.js.map": "/anodaworld/static/js/main.72b8c3f4.chunk.js.map",
+    "main.css": "/anodaworld/static/css/main.433789ae.chunk.css",
+    "main.js": "/anodaworld/static/js/main.f3520bb5.chunk.js",
+    "main.js.map": "/anodaworld/static/js/main.f3520bb5.chunk.js.map",
     "runtime-main.js": "/anodaworld/static/js/runtime-main.c8132153.js",
     "runtime-main.js.map": "/anodaworld/static/js/runtime-main.c8132153.js.map",
     "static/css/2.281daa83.chunk.css": "/anodaworld/static/css/2.281daa83.chunk.css",
-    "static/js/2.8d3eb87f.chunk.js": "/anodaworld/static/js/2.8d3eb87f.chunk.js",
-    "static/js/2.8d3eb87f.chunk.js.map": "/anodaworld/static/js/2.8d3eb87f.chunk.js.map",
+    "static/js/2.0c075af4.chunk.js": "/anodaworld/static/js/2.0c075af4.chunk.js",
+    "static/js/2.0c075af4.chunk.js.map": "/anodaworld/static/js/2.0c075af4.chunk.js.map",
     "index.html": "/anodaworld/index.html",
     "static/css/2.281daa83.chunk.css.map": "/anodaworld/static/css/2.281daa83.chunk.css.map",
-    "static/css/main.04d0c0a6.chunk.css.map": "/anodaworld/static/css/main.04d0c0a6.chunk.css.map",
-    "static/js/2.8d3eb87f.chunk.js.LICENSE.txt": "/anodaworld/static/js/2.8d3eb87f.chunk.js.LICENSE.txt",
+    "static/css/main.433789ae.chunk.css.map": "/anodaworld/static/css/main.433789ae.chunk.css.map",
+    "static/js/2.0c075af4.chunk.js.LICENSE.txt": "/anodaworld/static/js/2.0c075af4.chunk.js.LICENSE.txt",
     "static/media/slick-theme.css": "/anodaworld/static/media/slick.c94f7671.ttf",
     "static/media/FirstTop.css": "/anodaworld/static/media/wall.0f680ea7.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.c8132153.js",
     "static/css/2.281daa83.chunk.css",
-    "static/js/2.8d3eb87f.chunk.js",
-    "static/css/main.04d0c0a6.chunk.css",
-    "static/js/main.72b8c3f4.chunk.js"
+    "static/js/2.0c075af4.chunk.js",
+    "static/css/main.433789ae.chunk.css",
+    "static/js/main.f3520bb5.chunk.js"
   ]
 }
