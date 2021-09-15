@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/anodaworld/static/css/main.ded1e6b8.chunk.css",
-    "main.js": "/anodaworld/static/js/main.bf414cf7.chunk.js",
-    "main.js.map": "/anodaworld/static/js/main.bf414cf7.chunk.js.map",
+    "main.js": "/anodaworld/static/js/main.b9936ae3.chunk.js",
+    "main.js.map": "/anodaworld/static/js/main.b9936ae3.chunk.js.map",
     "runtime-main.js": "/anodaworld/static/js/runtime-main.c8132153.js",
     "runtime-main.js.map": "/anodaworld/static/js/runtime-main.c8132153.js.map",
     "static/css/2.281daa83.chunk.css": "/anodaworld/static/css/2.281daa83.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.281daa83.chunk.css",
     "static/js/2.50cb04f3.chunk.js",
     "static/css/main.ded1e6b8.chunk.css",
-    "static/js/main.bf414cf7.chunk.js"
+    "static/js/main.b9936ae3.chunk.js"
   ]
 }
