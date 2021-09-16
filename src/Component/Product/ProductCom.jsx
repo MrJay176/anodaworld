@@ -6,11 +6,12 @@ import { AddShoppingCart } from '@material-ui/icons';
 import { Spring, animated } from 'react-spring';
 import { Link } from 'react-router-dom';
 
+
 const ProductCom = ({ product }) => {
 
     return (
         <Spring
-            from={{ opacity: 0, marginTop: -500 }}
+            from={{opacity:0,marginTop:-500}}
             to={{ opacity: 1, marginTop: 0 }}
             config={{ duration: 2000 }}
         >

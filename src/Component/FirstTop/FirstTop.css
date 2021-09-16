@@ -72,11 +72,50 @@
     display:flex;
     flex-flow: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content:center;
     overflow: hidden;
     height: 90%;
-    width:80%;
+    width:70%;
 }
+}
+
+@media screen and (max-width:900px) and (min-width:850px){
+ 
+ .LeftSection p{
+   font-size:30px;
+ } 
+  
+.LeftSection{
+  height:25%;
+  display:flex;
+  flex-flow:column;
+  align-items: center;
+  padding-top:10px;
+  color: white;
+  width:100%;
+}
+
+.RightSection{
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  height: 70%;
+  width:80%;
+}
+
+.FirstTop{
+    display:flex;
+    height: 830px;
+    width: 100%;
+    background-color: rgb(149, 149, 175);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+ }
+  
 }
 
 @media screen and (min-height:790px){
@@ -92,23 +131,62 @@
   }
 }
 
-@media screen and (max-width:1098px )  and (min-width:850px){
-  .FirstTop{
-    display:flex;
-    height: 730px;
-    width: 100%;
-    background-color: rgb(149, 149, 175);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    overflow: hidden;
-  }
+@media screen and (max-width:1098px )  and (min-width:900px){
+  
+ .LeftSection p{
+  font-size:30px;
+} 
+ 
+.LeftSection{
+ height:25%;
+ display:flex;
+ flex-flow:column;
+ align-items: center;
+ padding-top:10px;
+ color: white;
+ width:100%;
+}
+
+.RightSection{
+ display:flex;
+ flex-flow: column;
+ align-items: center;
+ justify-content: flex-start;
+ overflow: hidden;
+ height: 70%;
+ width:80%;
+}
+
+.FirstTop{
+   display:flex;
+   height: 830px;
+   width: 100%;
+   background-color: rgb(149, 149, 175);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   overflow: hidden;
+}
+ 
+}
+
+@media screen and (min-height:790px){
+ .FirstTop{
+   display:flex;
+   height: 730px;
+   width: 100%;
+   background-color: rgb(149, 149, 175);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   overflow: hidden;
+ }
 }
 
 @media screen and(max-width:400px) {
   
   ::-webkit-scrollbar{
-    width:10px;
+    width:1px;
     display:none; 
   }
 
@@ -133,6 +211,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     overflow: hidden;
+    margin-left:5px;
   }
  
   .bottom{
@@ -164,6 +243,7 @@
     flex-flow: column;
     width:300px;
     background-color: white;
+    border-radius: 30px;
   }
 
   .image-show{
@@ -186,7 +266,11 @@
  }
 
  .RightSection-Mobile::-webkit-scrollbar{
-  width:10px; 
+  width:1px; 
+}
+
+.RightSection-Mobile::-webkit-scrollbar {
+  display: none;
 }
 
 .RightSection-Mobile::-webkit-scrollbar-track{
@@ -196,7 +280,7 @@
 
 .RightSection-Mobile::-webkit-scrollbar-thumb{
   border-radius: 5px;
-  background-color: rgb(200, 149, 175);;
+  background-color: rgb(200, 149, 175);
 }
 
 
@@ -215,13 +299,18 @@
     width:100%;
     flex:2;
     height:300px;
-    overflow: hidden;
+    overflow: scroll;
+    /* Hide scrollbar for IE, Edge add Firefox */
+   -ms-overflow-style: none;
+   scrollbar-width: none; /* Firefox */
   }
 
   .RightSection-Mobile:hover {
     overflow-x: scroll;
   }
   
+  
+
   .card-mobile{
     flex-shrink:0;
     width: 300px;

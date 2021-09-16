@@ -44,13 +44,10 @@ const GeneralGrid = () => {
             <h1 className="header-text">Get The Best Prices Of All Our Products</h1>
             <div className={classes.GeneralGridCover}>
                 <Grid container spacing={1} className={classes.grid}>
-                    {products.map((e) => (
-                      
-                            <Grid item key={e.id} xs={6} md={3}>
+                    {products.map((e) =>(
+                            <Grid item key={e.id} xs={6} sm={3} md={3} lg={3}>
                                 <ProductCom product={e} />
                             </Grid>
-                        
-
 
                     ))}
                 </Grid>

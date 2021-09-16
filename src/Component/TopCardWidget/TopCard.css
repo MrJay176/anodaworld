@@ -1,0 +1,27 @@
+.TopContainer{
+    background-color:white;
+    border-radius:10px;
+}
+
+.TopCard{
+    display: flex;
+    width:80%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: auto;
+}
+
+.link a{
+
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.Topcard1{
+    display: flex;
+    width:100%;
+    align-content: center;
+    align-items: center;
+}

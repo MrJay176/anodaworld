@@ -4,21 +4,16 @@ import Products from '../Product/product';
 import { animated, useSpring } from "react-spring";
 import { useScroll } from "react-use-gesture";
 import { Spring } from 'react-spring';
-import {Link} from 'react-router-dom';
-
-function useWindowSize(){
-   
-}
+import { Link } from 'react-router-dom';
+import TopCardWidget from '../TopCardWidget/TopCard';
 
 const FirstTop = () => {
- 
-    const [isMobile, setIsMobile] = useState(false);
-    
-   // const [height , width] = useWindowSize();
 
-    const[size , setSize ] = useState([window.innerHeight , window.innerWidth]);
-   
-     
+    const [isMobile, setIsMobile] = useState(false);
+
+    // const [height , w
+
+    const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
 
     const [style, set] = useSpring(() => ({
         transform: "perspective(700px) rotateY(0deg)"
@@ -39,8 +34,6 @@ const FirstTop = () => {
             setIsMobile(false);
         }
     };
-
-    // window.addEventListener('resize', setMobileIfMobile);
 
     const bind = useScroll(event => {
         set({
@@ -70,11 +63,12 @@ const FirstTop = () => {
 
     useEffect(() => {
         setMobileIfMobile();
-        const handleResize = ()=>{
-            setSize([window.innerHeight, window.innerWidth]);  
-            setMobileIfMobile();     
+        const handleResize = () => {
+            setSize([window.innerHeight, window.innerWidth]);
+            setMobileIfMobile();
         }
-        window.addEventListener("resize",handleResize);
+        console.log("UseEffect have been triggered");
+        window.addEventListener("resize", handleResize);
     }, [])
 
     console.log("This Is Custom Name " + custom_name);
@@ -89,33 +83,35 @@ const FirstTop = () => {
             {props => (
                 <div style={props}>
                     <div className="FirstTop row">
-                       
-                            <div className={custom_name == "RightSection" ? "LeftSection col-12" : "LeftSection"}>
-                                <div className="LeftSection" >
-                                    <p className="buy">Buy Beautiful Dresses From Us</p>
-                                    <p className="buy">Wear The Best Outfit That Suits You </p>
-                                    <p className="buy">Never Run Out Of Choices</p>
-                                </div>
-                            </div>
 
-                            <div className={custom_name == "RightSection" ? "RightSection col-12" : "RightSection-Mobile"}>
-                                {custom_name == 'RightSection' ? <Products section={1} /> :
-                                    <div className="RightSection-Mobile" {...bind()}>
-                                        {productBags.map((e) => (
-                                            
-                                            <Link to = {{
-                                                pathname:"/display",
-                                                state:{
-                                                   product:e
-                                                }
-                                             }}>
-                                               <animated.div
+                        <div className={custom_name == "RightSection" ? "LeftSection col-12" : "LeftSection"}>
+                            <div className="LeftSection" >
+                                <p className="buy">Buy Beautiful Dresses From Us</p>
+                                <p className="buy">Wear The Best Outfit That Suits You </p>
+                                <p className="buy">Never Run Out Of Choices</p>
+                            </div>
+                        </div>
+
+                        <div className={custom_name == "RightSection" ? "RightSection col-12" : "RightSection-Mobile"}>
+                            {custom_name == 'RightSection'?
+                                // <Products section={1}/>
+                                <TopCardWidget /> :
+                                <div className="RightSection-Mobile" {...bind()}>
+                                    {productBags.map((e) => (
+
+                                        <Link to={{
+                                            pathname: "/display",
+                                            state: {
+                                                product: e
+                                            }
+                                        }}>
+                                            <animated.div
                                                 key={e.image}
                                                 className="card-mobile"
                                                 style={{
                                                     ...style,
                                                 }}
-                                             >
+                                            >
                                                 <img src={e.image} alt="" className='image-show' />
                                                 <div className="bottom">
                                                     <div className="row">
@@ -128,19 +124,14 @@ const FirstTop = () => {
                                                     </div>
                                                 </div>
                                             </animated.div>
-                                             </Link>
-                                           
-                                        ))}
-                                    </div>
-                                }
-
-                            </div>
-
+                                        </Link>
+                                    ))}
+                                </div>
+                            }
+                        </div>
                     </div>
-
                 </div>
             )}
-
         </Spring>
 
 

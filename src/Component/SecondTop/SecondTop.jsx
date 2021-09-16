@@ -10,12 +10,6 @@ const FirstTop = () => {
 
     const[size , setSize ] = useState([window.innerHeight , window.innerWidth]);
 
-    
-   // window.addEventListener('resize',checkFromWindow);
-    
-  
-    
-
     return (
 
         <div>

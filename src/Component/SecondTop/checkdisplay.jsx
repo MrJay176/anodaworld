@@ -10,8 +10,9 @@ const CheckScreenSize = (window) => {
 
     const [isMobile, setIsMobile] = useState(false);
     const [customName, setCustomName] = useState('LeftSection-Second');
+    const [useEffectTriggered, setTriggered] = useState(false);
 
-    const[size , setSize ] = useState([window.innerHeight , window.innerWidth]);
+    const [size, setSize] = useState([window.innerHeight, window.innerWidth]);
 
     const setMobileIfMobile = () => {
         if (window.innerWidth <= 700) {
@@ -23,17 +24,21 @@ const CheckScreenSize = (window) => {
         }
     };
 
-  
-    useEffect(() => {
+    const handleResize = () => {
+        setSize([window.innerHeight, window.innerWidth]);
         setMobileIfMobile();
-        const handleResize = ()=>{
-            setSize([window.innerHeight, window.innerWidth]);  
-            setMobileIfMobile();     
-        }
-        window.addEventListener("resize",handleResize);
-    }, [])
+    }
 
-        
+    useEffect(() => {
+        if (!useEffectTriggered) setTriggered(true);
+        setMobileIfMobile();
+        window.addEventListener("resize", handleResize);
+        window.onbeforeunload = () => { return "" };
+
+        return () => { window.onbeforeunload = null };
+    }, [useEffectTriggered])
+
+
 
 
     // const Webview = <Products section={2} />;
@@ -60,16 +65,27 @@ const CheckScreenSize = (window) => {
 
 
     const Webview =
-        <div className="webSecondCorrect row">
+        <div className="webSecondCorrect">
+            <div className="row">
+                <div className="col col-md-12 col-lg-12 col-xs-12 col-sm-12 mt-20">
+                    <div className="text">
+                        <h2 className="text-p">Wear The Best Outfit That Suits You</h2>
+                    </div>
+                </div>
+                <div className="col col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                    <div className="webGrid">
+                        <SecondProduct/>
+                    </div>
+                </div>
+            </div>
 
-            <div className="webGrid col-md-12 col-lg-6 col-xs-12 col-sm-12 pl-md-20 pl-lg-30">
-
+            {/* <div className="webGrid col-md-12 col-lg-6 col-xs-12 col-sm-12 pl-md-20 pl-lg-30">
                 <SecondProduct />
-            </div>
+            </div> */}
 
-            <div className="text col-md-12 col-lg-6 col-xs-12 col-sm-12 pl-md-20 pl-lg-30">
+            {/* <div className="text col-md-12 col-lg-6 col-xs-12 col-sm-12 pl-md-20 pl-lg-30">
                 <h2 className="text-p">Wear The Best Outfit That Suits You</h2>
-            </div>
+            </div> */}
 
         </div>
 

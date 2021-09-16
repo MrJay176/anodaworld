@@ -14,12 +14,16 @@
 
   .webGrid{
     height:100%;
-    padding-top: 30px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-top:30px;
   
   }
 
   .text{
-    height:30%;
+    height:90%;
     display:flex;
     align-self: center;
     align-items: center;
@@ -71,10 +75,11 @@
     }
 
     .card-mobile{
-      margin-left:10px;
-      margin-right:10px;
+      margin-left:5px;
+      margin-right:5px;
       height:250px;
-      width:300px;
+      width:250px;
+      border-radius:10px !important;
       background-color: white;
     }
 
@@ -88,9 +93,11 @@
 
       .LeftSection-Mobile{
         display:flex;
+        -ms-overflow-style: none;
+        scrollbar-width: none; /* Firefox */
         flex-flow: row;
         height:300px;
-        overflow: hidden;
+        overflow: scroll;
       }
 
       .RightSection-Second p{
@@ -117,18 +124,22 @@
     }
 
     
-::-webkit-scrollbar{
+.LeftSection-Mobile::-webkit-scrollbar{
   width:10px;
 }
 
-::-webkit-scrollbar-track{
+.LeftSection-Mobile::-webkit-scrollbar {
+  display: none;
+}
+
+.LeftSection-Mobile::-webkit-scrollbar-track{
   border-radius: 5px;
   box-shadow: inset 0 0 10px rgba(0, 0, 0,0.25);
 }
 
-::-webkit-scrollbar-thumb{
+.LeftSection-Mobile::-webkit-scrollbar-thumb{
   border-radius: 5px;
   background-color: rgb(200, 149, 175);;
 }
-  }
+}
   

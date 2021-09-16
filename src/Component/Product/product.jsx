@@ -24,9 +24,9 @@ const Products = ({section})=>{
         <main>
         <Grid container  spacing={1} className = "container grid m-auto justify-content-center"> 
           {section==1?productBags.map((e)=>(
-             <Grid item key={e.id} xs={6} sm ={6} md ={6} lg={6} className ="myGrid m-auto justify-content-center">
+             <Grid item key={e.id} xs={6} sm={6} md ={6} lg={6} className ="myGrid m-auto justify-content-center">
                   <Link to = {{
-                     pathname:"/display",
+                     pathname:"display",
                      state:{
                         product:e
                      }

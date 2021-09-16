@@ -51,6 +51,14 @@
      }
 }
 
+@media screen and (max-width:1040px )  and (min-width:840px){
+    .card-main{
+        height:200px; 
+        width: 200px; 
+        padding:0px;
+     }
+}
+
 .card-media{
     width:100%;
     border-radius: 10px;
